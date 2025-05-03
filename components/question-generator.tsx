@@ -85,14 +85,6 @@ export default function QuestionGenerator() {
             </Alert>
           )}
 
-          <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-md">
-            <p className="text-amber-800 text-sm">
-              This application requires a Google AI API key to function. Please ensure you have added the
-              <code className="bg-amber-100 px-1 rounded mx-1">GOOGLE_API_KEY</code>
-              environment variable to your project.
-            </p>
-          </div>
-
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid gap-6 sm:grid-cols-2">

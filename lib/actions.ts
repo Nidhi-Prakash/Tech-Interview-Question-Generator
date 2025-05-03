@@ -7,7 +7,7 @@ import type { QuestionType, GenerateQuestionsParams } from "@/lib/types"
 export async function generateQuestions(params: GenerateQuestionsParams): Promise<QuestionType[]> {
   try {
     // Check if Google AI API key is available
-    if (!process.env.GOOGLE_API_KEY) {
+    if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY) {
       throw new Error("Google AI API key is not configured. Please check your environment variables.")
     }
 
